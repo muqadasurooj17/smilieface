@@ -1,0 +1,26 @@
+<html>
+  <body>
+  <h1> SMILIE</h1>
+  <canvas id="myCanvas" width="300" height="200" style="border:1px solid #c3c3c3;">
+</canvas>
+    
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    
+    ctx.beginPath();
+              ctx.arc(75, 75, 50, 0, Math.PI * 2, true); // Outer circle
+     ctx.moveTo(110, 75);
+     ctx.strokeStyle = '#ff0000';
+     ctx.stroke();
+    
+     ctx.arc(75, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+          ctx.moveTo(65, 65);
+         ctx.arc(60, 65, 5, 0, Math.PI * 2, true);  // Left eye
+          ctx.moveTo(95, 65);
+           ctx.arc(90, 65, 5, 0, Math.PI * 2, true);  // Right eye
+    ctx.stroke();
+    </script> 
+    </body>
+
+    </html>
